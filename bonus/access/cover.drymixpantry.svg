@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
-  <rect width="600" height="900" fill="#1F3A2A"/>
-  <rect x="30" y="30" width="540" height="840" fill="none" stroke="#D0A068" stroke-width="4"/>
-  <text x="300" y="354" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#F6F1E6">The Super</text>
-  <text x="300" y="418" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#F6F1E6">Simple Amish</text>
-  <text x="300" y="482" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#F6F1E6">Dry Mix Pantry</text>
-  <text x="300" y="546" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#F6F1E6">Cookbook</text>
-</svg>

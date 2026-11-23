@@ -11,23 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --forest:        #1F3A2A;
-      --forest-mid:    #36503F;
-      --teal:          #4E6654;
-      --sage:          #856C4E;
-      --sage-soft:     #F2EFEC;
-      --terracotta:    #A0582A;
-      --gold:          #D0A068;
-      --gold-pale:     #F7EEE4;
-      --gold-bright:   #D7AE7F;
-      --cream:         #F6F1E6;
-      --cream-dark:    #F2E8D8;
-      --warm-white:    #FAF8F2;
+      --forest:        #2B1709;
+      --forest-mid:    #5E3E20;
+      --teal:          #906436;
+      --sage:          #1B3F66;
+      --sage-soft:     #E6EAEE;
+      --terracotta:    #B1120C;
+      --gold:          #E6A558;
+      --gold-pale:     #FAEFE1;
+      --gold-bright:   #EAB271;
+      --cream:         #FDF6E6;
+      --cream-dark:    #FAEDD6;
+      --warm-white:    #FEFAF2;
       --text:          #1E1E1E;
       --text-secondary:#5A5A5A;
       --white:         #FFFFFF;
-      --shadow-sm:     0 2px 8px rgba(31,58,42,0.06);
-      --shadow-lg:     0 20px 50px rgba(31,58,42,0.14);
+      --shadow-sm:     0 2px 8px rgba(43,23,9,0.06);
+      --shadow-lg:     0 20px 50px rgba(43,23,9,0.14);
       --shadow-book:   0 25px 60px rgba(0,0,0,0.30), 0 6px 16px rgba(0,0,0,0.15);
     }
 
@@ -65,7 +65,7 @@
       padding: 0.9rem 1.5rem;
       border-radius: 0.7rem;
       text-decoration: none;
-      box-shadow: 0 6px 18px rgba(31,58,42,0.28);
+      box-shadow: 0 6px 18px rgba(43,23,9,0.28);
       -webkit-tap-highlight-color: transparent;
       transition: transform 0.12s ease;
     }
@@ -78,10 +78,10 @@
        o dalla palette), righe sottili come la spazzolatura, un filo di luce in alto e un'ombra interna in basso.
        Il controllo dei contrasti misura il testo su ciascuno dei tre colori. */
     .hero .cta-btn {
-      background-color: #D7AE7F;
+      background-color: #EAB271;
       background-image:
         repeating-linear-gradient(100deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 3px),
-        linear-gradient(180deg, #E9D2B9 0%, #D7AE7F 50%, #D7AE7F 100%);
+        linear-gradient(180deg, #F3D5B1 0%, #EAB271 50%, #EAB271 100%);
       color: var(--forest);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), inset 0 -3px 0 rgba(0,0,0,0.15), 0 6px 22px rgba(0,0,0,0.35);
     }
@@ -111,7 +111,7 @@
       position: absolute;
       top: -30%; right: -40%;
       width: 520px; height: 520px;
-      background: radial-gradient(circle, rgba(78,102,84,0.32) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(144,100,54,0.32) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -137,7 +137,7 @@
     /* «Your free bonus» come metallo: tre colori dall'alto in basso (qr.bridge.colori.titolo, o dalla palette),
        un'ombra stretta sotto le lettere, un alone, e il riflesso che lo attraversa */
     .glint {
-      color: #E3C6A5;
+      color: #F0C99C;
       filter: drop-shadow(0 2px 0 rgba(0,0,0,0.35)) drop-shadow(0 0 16px rgba(255,220,170,0.3));
     }
 
@@ -145,7 +145,7 @@
       .glint {
         background-image:
           linear-gradient(110deg, transparent 0%, transparent 42%, rgba(255,255,255,0.95) 50%, transparent 58%, transparent 100%),
-          linear-gradient(180deg, #E9D2B9 10%, #E3C6A5 45%, #DDBA92 90%);
+          linear-gradient(180deg, #F3D5B1 10%, #F0C99C 45%, #EDBE86 90%);
         background-size: 300% 100%, 100% 100%;
         background-position: 100% 0, 0 0;
         background-repeat: no-repeat;
@@ -199,7 +199,7 @@
       width: 1.35rem; height: 1.35rem;
       border-radius: 50%;
       /* stessi colori del primo bottone: il testo scuro su ciascuno è già misurato dal controllo dei contrasti */
-      background: linear-gradient(180deg, #E9D2B9 0%, #D7AE7F 100%);
+      background: linear-gradient(180deg, #F3D5B1 0%, #EAB271 100%);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
       color: var(--forest);
       font-size: 0.78rem;

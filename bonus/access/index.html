@@ -11,23 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --forest:        #1F3A2A;
-      --forest-mid:    #36503F;
-      --teal:          #4E6654;
-      --sage:          #856C4E;
-      --sage-soft:     #F2EFEC;
-      --terracotta:    #A0582A;
-      --gold:          #D0A068;
-      --gold-pale:     #F7EEE4;
-      --gold-bright:   #D7AE7F;
-      --cream:         #F6F1E6;
-      --cream-dark:    #F2E8D8;
-      --warm-white:    #FAF8F2;
+      --forest:        #2B1709;
+      --forest-mid:    #5E3E20;
+      --teal:          #906436;
+      --sage:          #1B3F66;
+      --sage-soft:     #E6EAEE;
+      --terracotta:    #B1120C;
+      --gold:          #E6A558;
+      --gold-pale:     #FAEFE1;
+      --gold-bright:   #EAB271;
+      --cream:         #FDF6E6;
+      --cream-dark:    #FAEDD6;
+      --warm-white:    #FEFAF2;
       --text:          #1E1E1E;
       --text-secondary:#5A5A5A;
       --white:         #FFFFFF;
-      --shadow-sm:     0 2px 8px rgba(31,58,42,0.06);
-      --shadow-lg:     0 20px 50px rgba(31,58,42,0.14);
+      --shadow-sm:     0 2px 8px rgba(43,23,9,0.06);
+      --shadow-lg:     0 20px 50px rgba(43,23,9,0.14);
       --shadow-book:   0 25px 60px rgba(0,0,0,0.30), 0 6px 16px rgba(0,0,0,0.15);
     }
 
@@ -73,7 +73,7 @@
       position: absolute;
       top: -30%; right: -40%;
       width: 520px; height: 520px;
-      background: radial-gradient(circle, rgba(78,102,84,0.32) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(144,100,54,0.32) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -91,13 +91,13 @@
     /* il titolo in rame, come «Your free bonus» nella bridge (qr.bridge.colori.titolo, o dalla palette), ma fermo:
        qui il riflesso sta sul bottone della recensione */
     .glint {
-      color: #E3C6A5;
+      color: #F0C99C;
       filter: drop-shadow(0 2px 0 rgba(0,0,0,0.35)) drop-shadow(0 0 16px rgba(255,220,170,0.3));
     }
 
     @supports ((-webkit-background-clip: text) or (background-clip: text)) {
       .glint {
-        background-image: linear-gradient(180deg, #E9D2B9 10%, #E3C6A5 45%, #DDBA92 90%);
+        background-image: linear-gradient(180deg, #F3D5B1 10%, #F0C99C 45%, #EDBE86 90%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -167,7 +167,7 @@
     .card-step .dot {
       width: 30px; height: 30px;
       border-radius: 50%;
-      background: linear-gradient(180deg, #E9D2B9 0%, #D7AE7F 100%);
+      background: linear-gradient(180deg, #F3D5B1 0%, #EAB271 100%);
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
       color: var(--forest);
       display: inline-flex;
@@ -209,7 +209,7 @@
       border-radius: 0.7rem;
       text-decoration: none;
       cursor: pointer;
-      box-shadow: 0 6px 18px rgba(31,58,42,0.28);
+      box-shadow: 0 6px 18px rgba(43,23,9,0.28);
       -webkit-tap-highlight-color: transparent;
       transition: transform 0.12s ease;
       position: relative;
@@ -222,12 +222,12 @@
 
     /* la recensione è l'azione principale: lo stesso rame spazzolato del primo bottone della bridge */
     .cta-btn.review {
-      background-color: #D7AE7F;
+      background-color: #EAB271;
       background-image:
         repeating-linear-gradient(100deg, rgba(255,255,255,0.08) 0 1px, transparent 1px 3px),
-        linear-gradient(180deg, #E9D2B9 0%, #D7AE7F 50%, #D7AE7F 100%);
+        linear-gradient(180deg, #F3D5B1 0%, #EAB271 50%, #EAB271 100%);
       color: var(--forest);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), inset 0 -3px 0 rgba(0,0,0,0.15), 0 6px 22px rgba(31,58,42,0.3);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), inset 0 -3px 0 rgba(0,0,0,0.15), 0 6px 22px rgba(43,23,9,0.3);
     }
 
     .cta-btn.review::after {
@@ -246,13 +246,13 @@
     .form .cta-btn {
       background-color: var(--forest);
       background-image: linear-gradient(180deg, var(--forest-mid) 0%, var(--forest) 100%);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22), 0 4px 0 color-mix(in srgb, var(--forest) 55%, black), 0 10px 22px rgba(31,58,42,0.35);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22), 0 4px 0 color-mix(in srgb, var(--forest) 55%, black), 0 10px 22px rgba(43,23,9,0.35);
       transition: transform 0.08s ease, box-shadow 0.08s ease;
     }
 
     .form .cta-btn:active {
       transform: translateY(3px);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22), 0 1px 0 color-mix(in srgb, var(--forest) 55%, black), 0 4px 10px rgba(31,58,42,0.3);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.22), 0 1px 0 color-mix(in srgb, var(--forest) 55%, black), 0 4px 10px rgba(43,23,9,0.3);
     }
 
     .form .cta-btn::after {
@@ -412,7 +412,7 @@
     <!-- ============== STEP 1: REVIEW ============== -->
     <div class="card">
       <h2 class="card-step"><span class="dot">1</span> Leave a review</h2>
-      <img src="cover.drymixpantry.svg" alt="The Super Simple Amish Dry Mix Pantry Cookbook – Book Cover" class="book-cover" width="150" height="225" />
+      <img src="cover.drymixpantry.jpg" alt="The Super Simple Amish Dry Mix Pantry Cookbook – Book Cover" class="book-cover" width="150" height="225" />
       <p>Please leave a quick, helpful review (less than 30 seconds) of your new &quot;The Super Simple Amish Dry Mix Pantry Cookbook&quot;.</p>
       <p class="muted">(optional, but I'd really love to get your feedback 😍)</p>
       <a class="cta-btn review" href="https://www.amazon.com/s?k=The+Super+Simple+Amish+Dry+Mix+Pantry+Cookbook+Linda+Haverly" target="_blank" rel="noopener">
